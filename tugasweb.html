@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promo HP Terbaru!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    .promo-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .promo-container img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #e60000;
+    }
+
+    .price {
+      font-size: 24px;
+      color: green;
+      margin: 20px 0;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: gray;
+      margin-right: 10px;
+    }
+
+    button {
+      background-color: #e60000;
+      color: white;
+      padding: 15px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #b30000;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="promo-container">
+    <h1>Promo Spesial! Samsung Galaxy S24 Ultra</h1>
+    <img src="samsung24ultra.jpg" alt="Samsung Galaxy S24 Ultra"/>
+    <p class="price">
+      <span class="old-price">Rp 20.000.000</span>
+      Rp 16.499.000
+    </p>
+    <p>Dapatkan Samsung Galaxy S24 Ultra dengan diskon spesial + bonus earbuds!</p>
+    <button onclick="beliSekarang()">Beli Sekarang</button>
+    <p class="message" id="promoMessage"></p>
+  </div>
+
+  <script>
+    function beliSekarang() {
+      const msg = document.getElementById('promoMessage');
+      msg.textContent = "Terima kasih! Promo Anda sedang diproses.";
+    }
+  </script>
+</body>
+</html>
